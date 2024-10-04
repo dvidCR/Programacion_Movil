@@ -1,3 +1,5 @@
+package ej
+
 class condicionalIF {
 //    Se ingresan tres notas de un alumno, si el promedio es mayor o igual a siete mostrar un mensaje "Promocionado".
     fun Ej1() {

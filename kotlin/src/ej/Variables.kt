@@ -1,3 +1,5 @@
+package ej
+
 class Variables {
     //Definir una variable inmutable con el valor 50 que representa el
     //lado de un cuadrado, en otras dos variables inmutables almacenar la superficie y el perímetro del cuadrado.

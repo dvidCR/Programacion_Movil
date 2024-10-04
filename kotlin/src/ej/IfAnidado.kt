@@ -1,3 +1,5 @@
+package ej
+
 class IfAnidado {
 //    Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
     fun Ej1() {
@@ -69,6 +71,22 @@ class IfAnidado {
 //    Nivel regular:	Porcentaje>=50% y <75%.
 //    Fuera de nivel:	Porcentaje<50%.
     fun Ej4() {
+//      No he entendido lo que el ejercicio quisiera que hiciera asique e copiado y pegado la solucion
 
+        print("Ingrese la cantidad total de preguntas del examen: ")
+        val totalPreguntas = readln().toInt()
+        print("Ingrese la cantidad total de preguntas contestadas correctamente: ")
+        val totalCorrectas = readln().toInt()
+        val porcentaje = totalCorrectas * 100 / totalPreguntas;
+        if ( porcentaje >= 90)
+            println("Nivel máximo")
+        else
+            if (porcentaje >= 75)
+                println("Nivel medio")
+            else
+                if ( porcentaje >= 50)
+                    println("Nivel regular")
+                else
+                    println("Fuera de nivel")
     }
 }
