@@ -2,6 +2,7 @@
 abstract class sistemaBancario(var saldo: Double) {
     abstract fun depositar(monto: Double)
     abstract fun retirar(monto: Double)
+    abstract fun transferir(cantidad: Double)
 
     fun mostrarSaldo() {
         println("Saldo actual: $saldo")
@@ -24,7 +25,15 @@ class CuentaAhorros(saldoInicial: Double, private val tasaInteres: Double) : sis
         }
     }
 
-    // Método específico para aplicar interés
+    override fun transferir(cantidad: Double) {
+        if (cantidad > 0 && saldo >= cantidad) {
+            retirar(cantidad)
+        } else {
+            println("No puedes retirar 0 o menos de dinero")
+        }
+    }
+
+    // Metodo específico para aplicar interés
     fun aplicarInteres() {
         saldo += saldo * tasaInteres
         println("Interés aplicado. Nuevo saldo: $saldo")
@@ -44,6 +53,14 @@ class CuentaCorriente(saldoInicial: Double, private val limiteCredito: Double) :
             println("Retiro de $monto en Cuenta Corriente. Nuevo saldo: $saldo")
         } else {
             println("Fondos insuficientes en Cuenta Corriente.")
+        }
+    }
+
+    override fun transferir(cantidad: Double) {
+        if (cantidad > 0 && saldo >= cantidad) {
+            retirar(cantidad)
+        } else {
+            println("No puedes retirar 0 o menos de dinero")
         }
     }
 }
