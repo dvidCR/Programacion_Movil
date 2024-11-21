@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Parques</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="inicio">Inicio</string>
+    <string name="anadir">Añadir Parques</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="about">About</string>
+</resources>
