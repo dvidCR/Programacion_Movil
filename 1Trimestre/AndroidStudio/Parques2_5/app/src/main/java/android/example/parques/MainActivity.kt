@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.ui.BiasAbsoluteAlignment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -18,12 +19,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val nombre = arrayOf("Parc de Capçalera. Valencia", "Parque del Retiro. Madrid", "Parc Güel. Barcelona")
-        val desc = arrayOf("Zona verde en el antiguo cauce de Túria, con senderos para caminar o ir en bicicleta.", "Jardin historico y parque público.", "Parque público con jardines y elementos arquitectónicos")
+        val nombre = arrayOf("Parc de Capçalera. Valencia", "Parque del Retiro. Madrid", "Parc Güel. Barcelona", "Parque del Tierno Galvan, Valdemoro")
+        val desc = arrayOf("Zona verde en el antiguo cauce de Túria, con senderos para caminar o ir en bicicleta.", "Jardin historico y parque público.", "Parque público con jardines y elementos arquitectónicos", "Prueba")
         val parqueAdapter = ParqueAdapter(nombre, desc)
 
         val recyclerView: RecyclerView = findViewById(R.id.rv)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = LinearLayoutManager(this) // Va dentro de los parentesis(, LinearLayoutManager.HORIZONTAL, false)
         recyclerView.adapter = parqueAdapter
 
     }

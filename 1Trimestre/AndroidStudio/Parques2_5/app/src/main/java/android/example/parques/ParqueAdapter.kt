@@ -3,6 +3,7 @@ package android.example.parques
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -39,6 +40,7 @@ class ParqueAdapter(private val name: Array<String>, private val desc: Array<Str
         // contents of the view with that element
         viewHolder.nameView.text = name[position]
         viewHolder.descView.text = desc[position]
+
     }
 
     // Return the size of your dataset (invoked by the layout manager)
