@@ -1,3 +1,5 @@
+package com.mgh.pmdm.parques.view.ui
+
 import android.widget.Spinner
 import com.mgh.pmdm.parques.databinding.FragmentSecondBinding
 import com.mgh.pmdm.parques.model.Park

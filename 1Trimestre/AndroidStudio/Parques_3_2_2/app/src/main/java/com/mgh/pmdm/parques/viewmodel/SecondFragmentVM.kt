@@ -1,6 +1,6 @@
 package com.mgh.pmdm.parques.viewModel
 
-import SecondFragment
+import com.mgh.pmdm.parques.view.ui.SecondFragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
