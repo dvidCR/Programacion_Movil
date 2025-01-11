@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CurriculumApp</string>
+    <string name="nombre">David Casado Rodríguez</string>
+    <string name="puesto">Técnico superior en Desarrollo de Aplicaciones Multiplataforma</string>
+    <string name="titulo_informacion_cv">Lore ipsum</string>
+    <string name="descripcion_informacion_cv">Lore ipsum</string>
+    <string name="habilidad">Lore ipsum</string>
+    <string name="desarrollador">Lore ipsum</string>
+    <string name="version">Lore ipsum</string>
+    <string name="fecha_creacion">Lore ipsum</string>
+    <string name="fecha_ultima_actualizacion">Lore ipsum</string>
+    <string name="copyright">©ColegioLagomar.2ºDAM</string>
+    <string name="carta_presentacion">Lore ipsum</string>
+</resources>

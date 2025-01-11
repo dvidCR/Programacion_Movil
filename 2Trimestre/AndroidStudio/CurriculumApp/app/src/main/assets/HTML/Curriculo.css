@@ -1,0 +1,42 @@
+body{
+    background-color: aquamarine;
+    font-family: "Mountis";
+    font-size: 24px;
+}
+
+@font-face {
+    font-family: 'Old London';
+    src: local('Old London'), url('./Fuentes/old_london/OldLondon.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mountis';
+    src: local('Mountis'), url('./Fuentes/mountis/MOUNTIS.otf') format('opentype');
+}
+
+#fuente {
+    font-family: "Old London";
+    font-size: 24px;
+}
+
+#cv{
+    display: block;
+    margin-left: 33%;
+    margin-top: 1%;
+}
+
+.nombre{
+    text-align: center;
+}
+
+#foto{
+    display: block;
+    margin-left: 400px;
+    margin-top: -110px;
+}
+
+hr {
+    border-color: black;
+    size: 3px;
+    margin-left: 0%;
+}
