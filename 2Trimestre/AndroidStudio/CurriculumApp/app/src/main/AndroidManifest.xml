@@ -13,19 +13,19 @@
         android:theme="@style/Theme.CurriculumApp"
         tools:targetApi="31">
         <activity
-            android:name=".LinkedinActivity"
+            android:name=".view.ui.LinkedinActivity"
             android:exported="false" />
         <activity
-            android:name=".AboutActivity"
+            android:name=".view.ui.AboutActivity"
             android:exported="false" />
         <activity
-            android:name=".WebActivity"
+            android:name=".view.ui.WebActivity"
             android:exported="false" />
         <activity
-            android:name=".CartaPresentacionActivity"
+            android:name=".view.ui.CartaPresentacionActivity"
             android:exported="false" />
         <activity
-            android:name=".CVActivity"
+            android:name=".view.ui.CVActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

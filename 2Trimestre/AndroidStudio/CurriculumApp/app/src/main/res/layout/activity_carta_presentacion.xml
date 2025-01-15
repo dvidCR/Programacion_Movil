@@ -6,15 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_app"
-    tools:context=".CartaPresentacionActivity">
+    tools:context=".view.ui.CartaPresentacionActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:outlineSpotShadowColor="@color/white"
         app:cardBackgroundColor="@color/background_component"
         app:cardCornerRadius="16dp"
-        android:outlineSpotShadowColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/tvCopyright"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +24,8 @@
             android:id="@+id/tvCarta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:paddingVertical="16dp"
             android:textColor="@color/grey"
             android:textSize="25dp"
             tools:text="@string/carta_presentacion" />
